@@ -13,33 +13,33 @@ h1 {
   font-size: 16px;
 } */
 
-img {
+/* img {
   max-height: 150px;
   border-radius: 100px;
-}
+} */
 
 /* .highlighted { 
   background-color: yellow;
 } */
 
-.centered {
+/* .centered {
   text-align: center;
   font-family: 'Times New Roman', Times, serif
-}
+} */
 
-.cow {
+/* .cow {
   background-color: burlywood;
-} 
+}  */
 
-.sheep {
+/* .sheep {
   background-color: black;
   color: white;
-}
+} */
 
-.dark {
+/* .dark {
   background-color: grey;
   color: black;
-}
+} */
 
 .alert { /* applies to all elements with class="alert" */
   font-size: larger;
@@ -54,6 +54,6 @@ img {
 } */
 
 
-p {
+/* p {
   font-family: Helvetica;
-}
+} */
