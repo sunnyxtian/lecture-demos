@@ -44,12 +44,15 @@ nav li {
     font-weight: 200px;
 
     /* Example 2 - make it inline */
+    /* display: inline;
+    width: 200px;
+    height: 50px; */
+    
+    /* Example 3 */
     /* display: inline-block;
     width: 200px;
-    height: 50px;
-     */
-    /* Example 3 */
-    /* display: inline-block; */
+    height: 50px; */
+    
 
     /* Example 3a */
     /* Show you can set width and height if you use inline-block */
