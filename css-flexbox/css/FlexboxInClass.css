@@ -9,6 +9,11 @@ h2 {
     color: rebeccapurple;
 }
 
+/* Example 3 - turn the whole thing into side by side columns! */ 
+main {
+    display: flex;
+    align-items: center;
+} 
 
 /* nav bar */
 nav {
@@ -32,10 +37,28 @@ nav li {
 /* about section */
 .about {
     background-color: #f8f8f8;
+    border: 1px solid black;
+
+}
+
+/* Example 1 my flexbox pool */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
 
 }
 
 
+.jobs .card.microsoft {
+    flex-grow: 5;
+    /* flex-grow: 0; */
+    /* flex-grow: 1; */
+}
+
+.jobs {
+    border: 1px solid black;
+}
 /* course cards */
 .jobs .card {
     border: 1px solid black;
