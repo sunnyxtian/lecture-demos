@@ -40,17 +40,19 @@ nav a {
 /* Example 1 Flexbox in the Nav: make the nav into a flexbox */
 nav ul {
     display: flex;
-    justify-content: space-between;
-    margin: 0;
+    /* justify-content: space-between; */
+    /* margin: 0; */
 }
 
 nav li {
     display: inline;
     /* flex-basis: 150px; */
-    padding: .5rem;
-    vertical-align: middle;
+    /* padding: .5rem; */
+    /* vertical-align: middle; */
+    /* text-align: center; */
 }
 /* End of example 1 */
+
 
 /* nav li {
     display: inline-block;
