@@ -50,12 +50,29 @@ nav a {
     color: white;
 }
 
+/* Example 1 Flexbox in the Nav: make the nav into a flexbox */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0; */
+}
+
 nav li {
+    display: inline;
+    flex-basis: 150px;
+    padding: .5rem;
+    /* vertical-align: middle; */
+    text-align: center;
+}
+/* End of example 1 */
+
+
+/* nav li {
     display: inline-block;
     width: 150px;
     padding: .5rem;
     vertical-align: middle;
-}
+} */
 
 /* main columns */
 /* the flexbox */
@@ -109,4 +126,29 @@ main {
 /* other */
 footer {
     font-size: smaller;
+}
+
+/* example 3 - make this thing responsive */
+/* if width >= 768 */
+
+@media (min-width: 768px) {
+    /* body {
+        background-color: lightpink;
+    } */
+
+    .jobs .card {
+        background-color: white;;
+        flex-basis: 50%;
+        margin:0;
+    }
+
+    main {
+        display: flex;
+    }
+
+    /* example 4 */
+    /* .jobs img {
+        display: block;
+    } */
+    
 }

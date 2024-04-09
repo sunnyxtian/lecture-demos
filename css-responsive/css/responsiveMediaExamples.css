@@ -18,7 +18,8 @@ body {
   border: 5px solid rebeccapurple;
   padding: .25em;
   flex-basis: 50%;
-  flex-grow: 1;
+  /* flex   -grow: 1; */
+  /* margin: 1px; */
 }
 
 
@@ -66,7 +67,7 @@ li {
 
 
 /*small screens*/
-/* @media (min-width:568px) {
+@media (min-width:568px) {
   .real-content {
       display:block;
   }
@@ -74,4 +75,4 @@ li {
   .warning {
       display:none;
   }
-} */
+}
