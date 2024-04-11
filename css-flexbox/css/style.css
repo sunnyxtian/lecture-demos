@@ -47,25 +47,23 @@ nav li {
     /* display: inline;
     width: 200px;
     height: 50px; */
-    
+
     /* Example 3 */
-    /* display: inline-block;
-    width: 200px;
-    height: 50px; */
-    
+    display: inline-block;
+    text-align: center;
 
     /* Example 3a */
     /* Show you can set width and height if you use inline-block */
 
-    /* width: 200px;
-    height: 75px; */
+    width: 200px;
+    height: 25px;
 
     /* Example 3b - make it look nicer */
     /* adding border; */
 
- /* border: 5px double white;
-    margin: 10px;
-    padding: 10px;  */
+    border: 1px double white;
+    margin: 2px;
+    padding: 2px;
 }
 
 /* about section */
@@ -110,12 +108,13 @@ nav li {
 /* other */
 footer {
     font-size: smaller;
+    /* relative sizing. turns 16px to 8px. */
 }
 
 /* Example 7 - see how using percentages can be unintuitive */
 /* fun example using font percentage */
-
-/* html {
+/*
+html {
     font-size: 62.5%
 }
 

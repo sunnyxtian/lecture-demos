@@ -1,13 +1,13 @@
-h1 {
-  font-family: 'Helvetica';
-  color: white;
-  background-color: rebeccapurple;
-  padding: .5em;
-  /* padding: 10px; */
+body {
+  font-family: 'Helvetica', Arial, Helvetica, sans-serif;
+  background-color: #daf797;
+  padding: 1.5em;
+  color: rgb(49, 99, 49);
 }
 
-h2 {
-  color: rebeccapurple;
+h1 {
+  font-size: 3em;
+  /* em units scale well */
 }
 
 p {
@@ -16,12 +16,23 @@ p {
 
 img {
   max-height: 150px;
-  border-radius: 20px;
+  /* specifying only height or width lets you scale the image without distortion*/
+  border-radius: 3px;
+}
+
+.about-section p > img:hover, .about-section p > img:focus {
+  mix-blend-mode: normal;
+  width: 300%;
 }
 
 /* elements with class="about-section" */
-.about-section {
-  background-color: #eee;
+.about-section p > img{
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.about-section > p, .link-section li {
+  font-size: 1em;
 }
 
 /* .alert {
