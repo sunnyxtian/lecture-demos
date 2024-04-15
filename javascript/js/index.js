@@ -278,37 +278,37 @@
 //     console.log(element.name, element.height, element.weight);
 // });
 
-// // Slide 30
-const myArray1 = [a, b, c];
+// // // Slide 30
+// const myArray1 = [a, b, c];
 
-myArray.push(k)
-myArray1 = [e,f,g];
+// myArray.push(k)
+// myArray1 = [e,f,g];
 
-const myArray = [1, 2, 3, 4];
-// example with normal for loop with array
-for (let i=0;i<myArray.length; i++){
-    console.log(myArray[i]);
-}
+// const myArray = [1, 2, 3, 4];
+// // example with normal for loop with array
+// for (let i=0;i<myArray.length; i++){
+//     console.log(myArray[i]);
+// }
 
-// example with enhanced for loop with array
-for(const theItem of myArray) { //loop array items
-  console.log(theItem)
-}
+// // example with enhanced for loop with array
+// for(const theItem of myArray) { //loop array items
+//   console.log(theItem)
+// }
 
-// example with object 1
-const myObject = {a: 1, b: 2, c: 3};
+// // example with object 1
+// const myObject = {a: 1, b: 2, c: 3};
 
-for(const theKey in myObject) { //loop object keys
-  console.log(theKey, ":", myObject[theKey])
-}
+// for(const theKey in myObject) { //loop object keys
+//   console.log(theKey, ":", myObject[theKey])
+// }
 
-// example with object 2
-//explicit key looping - prefered this
-const keys = Object.keys(myObject);
-for(const theKey of keys) 
-{ console.log(theKey, ":", myObject[theKey])};
+// // example with object 2
+// //explicit key looping - prefered this
+// const keys = Object.keys(myObject);
+// for(const theKey of keys) 
+// { console.log(theKey, ":", myObject[theKey])};
 
-// Slide 32
+// // Slide 32
 
 
 
