@@ -5,7 +5,7 @@
 
 // console.log("The days are getting longer")
 
-// // Slide 16 - dynamically typed
+// // // Slide 16 - dynamically typed
 //  let myDogName = "Jovie";
 //  console.log(myDogName);
 //  console.log(typeof(myDogName));
@@ -13,6 +13,10 @@
 //  myDogName = 7;
 //  console.log(myDogName);
 //  console.log(typeof(myDogName));
+
+//  //create a variable (not assigned)
+// let hoursSlept; 
+// console.log(hoursSlept); //=> undefined
 
 //  let hoursSlept = ['a', 'b', 'c'];
 //  console.log(hoursSlept);
