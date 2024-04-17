@@ -1,9 +1,12 @@
 'use strict';
 
-// // Slide 11/12/13
+// Slide 11/12/13
 // console.log("Hello World");
 
 // console.log("The days are getting longer")
+// const foo = 1;
+// // console.log(foo, "this is my example.", "but wait, there's more!", "and more")
+// console.log("this is my variable foo in index.js: ", foo);
 
 // // // Slide 16 - dynamically typed
 //  let myDogName = "Jovie";
@@ -18,9 +21,12 @@
 // let hoursSlept; 
 // console.log(hoursSlept); //=> undefined
 
-//  let hoursSlept = ['a', 'b', 'c'];
+//  const hoursSlept = ['a', 'b', 'c'];
 //  console.log(hoursSlept);
 //  console.log(typeof(hoursSlept));
+//  hoursSlept.push('d')
+
+//  hoursSlept = ['4', '5']
 
 // // Slide 17
 // const x = 4;
@@ -38,16 +44,16 @@
 // myArray = [a,b,c];
 
 
-// // Slide 18 Variable types
-// //Numbers (no difference between int and float)
-// const x = 4;   //'number'
-// const y = 1.5; //'number'
+// Slide 18 Variable types
+//Numbers (no difference between int and float)
+const x = 4;   //'number'
+const y = 1.5; //'number'
 
-// //Strings (single or double quotes, just be consistent)
-// const message = "Hello world";
+//Strings (single or double quotes, just be consistent)
+const message = "Hello world";
 
 // //Booleans
-// const likesCode = true;
+const likesCode = true;
 
 // //Arrays
 // const letters = ['a', 'b', 'c']; //literal syntax
@@ -61,23 +67,23 @@
 // letters[3] = "car";
 // console.log(letters);
 
-// // const myArray = ["tim", "tom", "ted"];
-// // console.log(myArray);
-// // console.log(myArray[2])
+// const myArray = ["tim", "tom", "ted"];
+// console.log(myArray);
+// console.log(myArray[2])
 
-// // Slide 20 - Nested Arrays
-// // an array of different dinners available at a fancy party
-// // this list has 4 elements, each of which is a list of 3 elements
-// // the indentation is just for human readability
-// const dinnerOptions = [
-//     ['chicken', 'mashed potatoes', 'mixed veggies'],
-//     ['steak', 'seasoned potatoes', 'asparagus'],
-//     ['fish', "rice", 'green beans'],
-//     ['portobello steak', 'rice', 'green beans']
-// ];
+// Slide 20 - Nested Arrays
+// an array of different dinners available at a fancy party
+// this list has 4 elements, each of which is a list of 3 elements
+// the indentation is just for human readability
+const dinnerOptions = [
+    ['chicken', 'mashed potatoes', 'mixed veggies'],
+    ['steak', 'seasoned potatoes', 'asparagus'],
+    ['fish', "rice", 'green beans'],
+    ['portobello steak', 'rice', 'green beans']
+];
 
 // // // console.log(dinnerOptions.length); //4
-// console.log(dinnerOptions[2][0])
+// console.log(dinnerOptions[0][1])
 
 // const fishOption = dinnerOptions[2]; // ['fish', 'rice', 'green beans']
 
@@ -120,6 +126,8 @@
 // console.log(var1, var2, var3, var4);
 // console.log(var1 + " " + var2 + var3 + var4);
 
+// console.log(var1 + var2)
+
 // // Slide 22
 // const ages = {'sarah':42, amit:35, zhang:13};
 
@@ -147,6 +155,7 @@
 // const empty = {}
 
 // console.log(typeExamples);
+// console.log(empty)
 
 
 // // // Slide 23 Accessing Properties
@@ -171,7 +180,7 @@
 // ages['joe'] = 15; //adds the key and assigns value
 // console.log(ages);
 
-// // ages['joe'] = 15; //adds the key and assigns value
+// ages['joe'] = 15; //adds the key and assigns value
 
 
 
@@ -228,7 +237,7 @@
   
   
 // //   const favFood = person['favorites'][inputtedValue]; //object in the object
-// //                   //object           //value
+// // //                   //object           //value
   
 //   const firstNumber = person['favorites']['numbers'][0]; //12
 
@@ -266,21 +275,21 @@
 //   const firstNumber = person.favorites.numbers[0]; //12
 //   person.favorites.numbers.push(7); //push 7 onto the Array
 
-// // Slide 28
-// // Arbitrary list of people's names, heights, and weights
-// const peopleTable = [
-//     {name: 'Ada', height: 64, weight: 135},
-//     {name: 'Bob', height: 74, weight: 156},
-//     {name: 'Chris', height: 69, weight: 139},
-//     {name: 'Diya', height: 69, weight: 144},
-//     {name: 'Emma', height: 71, weight: 152}
-// ]
+// Slide 28
+// Arbitrary list of people's names, heights, and weights
+const peopleTable = [
+    {name: 'Ada', height: 64, weight: 135},
+    {name: 'Bob', height: 74, weight: 156},
+    {name: 'Chris', height: 69, weight: 139},
+    {name: 'Diya', height: 69, weight: 144},
+    {name: 'Emma', height: 71, weight: 152}
+]
 
-// console.log(peopleTable);
+console.log(peopleTable);
 
-// peopleTable.forEach(element => {
-//     console.log(element.name, element.height, element.weight);
-// });
+peopleTable.forEach(element => {
+    console.log(element.name, element.height, element.weight);
+});
 
 // // // Slide 30
 // const myArray1 = [a, b, c];
