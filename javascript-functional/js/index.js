@@ -60,6 +60,7 @@ const peopleArray = [
 // //   console.log("Hello, "+person);
 // // }
 
+
 // //anonymous function (value) assigned to variable
 // const sayHello = function(person) {
 //   console.log("Hello, "+person);
@@ -87,6 +88,8 @@ const peopleArray = [
 // //access (run) with dot notation
 // obj.sayHi('all'); //prints "Hello all"
 
+// sayHello("foo")
+
 // //here's the object. It has the one function we assigned above
 // console.log("obj : ", obj);
 
@@ -102,7 +105,7 @@ const peopleArray = [
 // //run it
 // obj.otherFunc();
 
-// // // slide 12
+// // // // slide 12
 
 // function sayHello(name) { 
 //   console.log("Hello, "+name);
@@ -117,6 +120,7 @@ const peopleArray = [
 
 // // //call function and pass value
 // // doWorld(sayHello); //prints "Hello world"
+
 
 
 // //pass literal (anonymous value)
@@ -139,7 +143,7 @@ const peopleArray = [
 
 // //resolve the expression, THEN print that out
 // console.log( sayHello() ); // logs "Hello", which is 
-//                           // what `sayHello()` resolves to.
+                          // what `sayHello()` resolves to.
 
 // // Slide 14 Calback Functions
 // //takes in TWO callback functions!
@@ -158,14 +162,14 @@ const peopleArray = [
 //   console.log('rub your belly');
 // }
 
-// // pass in the callbacks to do them together
-// doTogether(patHead, rubBelly);
+// // // pass in the callbacks to do them together
+// // doTogether(patHead, rubBelly);
 
 // // doTogether(rubBelly, patHead);
 // doTogether(rubBelly, patHead());
 
 
-// // Slide 15
+// Slide 15
 
 // //Arbitrary list of people's names, heights, and weights
 // let peopleArray = [ {name: 'Ada', height: 64, weight: 200},
@@ -177,7 +181,7 @@ const peopleArray = [
 // console.log('**-Initial**');
 // peopleArray.forEach(function (person) { console.log(person)})
 
-// // // peopleArray.forEach((person) => console.log(person))
+// // peopleArray.forEach((person) => console.log(person))
 
 // //a function to "sort" people objects. Returns
 // //  < 0 if A comes before B, 
@@ -197,7 +201,7 @@ const peopleArray = [
 // peopleArray.sort(sortByHeightFunction); //sorts in place!
 
 // peopleArray.forEach(function (person) { console.log(person.name, person.height)})
-// // peopleArray.forEach((person) => console.log(person))
+// peopleArray.forEach((person) => console.log(person))
 
 // function sortByWeightFunction(personA, personB) {
 //   if(personA.weight < personB.weight) {
@@ -213,9 +217,9 @@ const peopleArray = [
 // peopleArray.sort(sortByWeightFunction); //sorts in place!
 // peopleArray.forEach(function (person) { console.log(person)})
 
-// // //peopleArray.forEach((person) => console.log(person))
+// //peopleArray.forEach((person) => console.log(person))
 
-// // Slide 16 - Array Iteration
+// Slide 16 - Array Iteration
 
 // //Iterate through an array
 // const array = ['a','b','c'];
@@ -253,9 +257,9 @@ const peopleArray = [
 
 // //Slide 18 Mapping
 
-// // function square(n) { //a function that squares a number
-// //   return n*n;
-// // }
+// function square(n) { //a function that squares a number
+//   return n*n;
+// }
 
 // const numbers = [1,2,3,4,5];  //an initial array
 // console.log(numbers);
@@ -273,6 +277,7 @@ const peopleArray = [
 //     return n*n;
 // })
 
+// // const squares = numbers.map(square)
 
 // console.log(squares); // [1, 4, 9, 16, 25]
 
@@ -280,10 +285,10 @@ const peopleArray = [
 
 // const peopleNames = ['Mickey', 'Daffy', 'Elmer'];
 
-// // const greetTransform = function (nameString) {
-// //   const transformed = "Hi " + nameString + "!"
-// //   return transformed
-// // };
+// const greetTransform = function (nameString) {
+//   const transformed = "Hi " + nameString + "!"
+//   return transformed
+// };
 
 // const peopleGreetings = peopleNames.map(function (nameString) {
 //   const transformed = "Hi " + nameString + "!"
@@ -294,7 +299,7 @@ const peopleArray = [
 
 // console.log(peopleGreetings);
 
-// // Slide 20 - Filtering
+// Slide 20 - Filtering
 
 // const array = [3,1,4,2,5];
 // console.log(array);
@@ -315,7 +320,7 @@ const peopleArray = [
 
 
 
-// Slide 21 - Reducing
+// // Slide 21 - Reducing
 
 // const letters = ['a','b','c','d','e'];  //an initial array
 // function link(accumulation, newItem) { //combines two strings
@@ -340,14 +345,14 @@ const peopleArray = [
 
 // console.log(linked); //"->a->b->c->d->e"
 
-// // accumulate example with peopleArray
-// function accumulate(accumulation, personObj) {
-//   const newAccumulation = accumulation + personObj.height;
-//   return newAccumulation;
-// }
-// const totalHeightOfPeople = peopleArray.reduce(accumulate, 0);
+// accumulate example with peopleArray
+function accumulate(accumulation, personObj) {
+  const newAccumulation = accumulation + personObj.height;
+  return newAccumulation;
+}
+const totalHeightOfPeople = peopleArray.reduce(accumulate, 0);
 
-// console.log(totalHeightOfPeople);
+console.log(totalHeightOfPeople);
 
 // // Slide 23 - Practice 
 // const phoneDigits = [6,5,2,6,9.5,2];
