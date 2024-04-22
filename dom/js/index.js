@@ -40,6 +40,7 @@ const songArray = [
 // dogImg.alt = 'a husky';
 
 
+
 // // Slide 15 Change a Style
 // // Notice you use "classList.add" to add an additional style to the 
 // // existing list of applied styles
@@ -98,6 +99,22 @@ const songArray = [
 // const songListElem = document.querySelector('#dataSection ol');
 // songListElem.appendChild(newLi);
 
+// // Example of building up an <li> with an embedded anchor tag, Using the json object above
+// // and building up
+// // Slide 17 (Example B)
+// //create the new elements
+// const newLi = document.createElement('li');
+// const newAnchor = document.createElement('a');
+
+// //fill out the attributes for the anchor
+// newAnchor.href = songArray[1].youtubeUrl;
+// newAnchor.textContent = songArray[1].artist + " - " + songArray[1].title;
+
+// newLi.appendChild(newAnchor);
+
+// //add to the appropriate place in DOM
+// const songListElem = document.querySelector('#dataSection ol');
+// songListElem.appendChild(newLi);
 
 // // Slide 18 - Pattern of using functions to generate elements
 // //Take in a song object and return a formatted <li> object
