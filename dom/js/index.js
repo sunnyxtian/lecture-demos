@@ -239,7 +239,7 @@ const songArray = [
 //   renderPuppy();
 // });
 
-// Slide 25 - Using state to keep track if puppy is showing
+// // Slide 25 - Using state to keep track if puppy is showing
 
 // //STATE (should be at top of file)
 // let puppyShown = true;
@@ -281,7 +281,7 @@ const songArray = [
 //   event.preventDefault();
 //   console.log('submitted!');
 //   console.log(event.target);
-
+  
 //   //... do something with that value!
 // });
 
@@ -340,9 +340,9 @@ const songArray = [
 
 //   songArray.push(newSong);
 
-//   document.querySelector('#artistInput').value = "";
-//   document.querySelector('#titleInput').value = "";
-//   document.querySelector('#urlInput').value = "";
+//   // document.querySelector('#artistInput').value = "";
+//   // document.querySelector('#titleInput').value = "";
+//   // document.querySelector('#urlInput').value = "";
   
 //   renderSongList(songArray);
 
