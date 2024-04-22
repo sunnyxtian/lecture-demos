@@ -207,12 +207,15 @@ const songArray = [
 // });
 
 
-// //Slide 24 - Using state to keep track if puppy is showing
+// // //Slide 24 - Using state to keep track if puppy is showing
 
 // //STATE (should be at top of file)
-// let puppyShown = false;
+// let puppyShown = true;
 
 // function renderPuppy() {
+
+//   // document.querySelector('#puppySection div').innerHTML="";
+
 //   const imgElement = document.createElement('img');
 
 //   imgElement.src = 'img/puppy.jpg';
