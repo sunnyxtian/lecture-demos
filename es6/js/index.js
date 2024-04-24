@@ -50,8 +50,8 @@ console.log(peopleArray);
 // }
 // console.log(nameArray3)
 
-// // Example of reduce
-// // Find the average height/weight ratio
+// Example of reduce
+// Find the average height/weight ratio
 
 // // Ex1: First remember, we can create an array using map of bmi
 // const ratioArray = peopleArray.map(function (peopleObj) {
@@ -126,9 +126,6 @@ console.log(peopleArray);
 //   const foo2 = (params) =>  'foo '+params;
   
 //   console.log(foo2("Wilma"));
-
-
-
   
 
 //   // Slide 12
