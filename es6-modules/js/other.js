@@ -2,6 +2,9 @@
 
 console.log("I'm the other.js file!");
 
+
+// import {animalArray} from './index.js';
+
 // //Slide 16a
 // console.log("Animal Array: ", animalArray)
 
