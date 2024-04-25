@@ -37,8 +37,8 @@ console.log(peopleArray);
 // // ex3 - using 'for each' rather than map
 // const nameArray2 = [];
 // peopleArray.forEach(function(personObj, index) {
-//     nameArray2[index] = personObj.name;
-//     // nameArray2.push(personObj.name);
+//     // nameArray2[index] = personObj.name;
+//     nameArray2.push(personObj.name);
 // });
 // console.log(nameArray2)
 
@@ -105,7 +105,7 @@ console.log(peopleArray);
 //     console.log("you left!!!");
 // })
 
-// // End of Slide 5
+// End of Slide 5
 
 // // Slide 9 - Arrow functions
 
@@ -126,10 +126,12 @@ console.log(peopleArray);
 //   const foo2 = (params) =>  'foo '+params;
   
 //   console.log(foo2("Wilma"));
-  
 
-//   // Slide 12
-//   //destructuring arrays
+//   // const foo3 = () => console.log("hey dude")
+//   // console.log(foo3);
+
+  // Slide 12
+  //destructuring arrays
 // const myArray = [1, 2, 3, 5];
 // const [x, y, z] = myArray; //myArray elements to `x`, `y`, `z`
 // console.log(x); //=> 1;
@@ -137,11 +139,12 @@ console.log(peopleArray);
 // console.log(z); //=> 3;
 
 // //destructuring objects
-// const myObject = {a: "dude", b: "surf", c: "hey"};
-// const {a, b, c} = myObject; //myObject.a to a, etc.
+// const myObject = {a: "dude", b: "surf", c: "hey", e: "surfsup"};
+// const {d, b, c, a} = myObject; //myObject.a to a, etc.
 // console.log(a); //=> 1
 // console.log(b); //=> 2;
 // console.log(c); //=> 3;
+// console.log(d); //=> ??;
 
 
 
@@ -150,18 +153,24 @@ console.log(peopleArray);
 // const dimensions = [10, 20, 30, 40];
 // //extra values are "spread" into destructuring slots
 // const [width, height, ...rest] = dimensions 
+// const [...rest2] = dimensions
+
 // console.log(width);  //=> 10
 // console.log(height); //=> 20
 // console.log(rest);   //=> [30, 40]; the rest of the values!
 // console.log(rest[1])
 
+// console.log (rest2)
+
+
+
 // //Spread with an object
 // const person = {name: 'Ada', height: 64, weight: 135}
-// console.log(person)
-// const copyOfPerson = {...person}; //clone an object!
-// console.log(copyOfPerson);
+// // console.log(person)
+// // const copyOfPerson = {...person}; //clone an object!
+// // console.log(copyOfPerson);
 
-// console.log(person === copyOfPerson); //false! different objects!
+// // console.log(person === copyOfPerson); //false! different objects!
 
 // //all off the properties are "spread" into the new object
 // const personWithHat = {hat: 'baseball', ...person}
@@ -169,7 +178,9 @@ console.log(peopleArray);
 // console.log(personWithHat); //has name, height, weight, hat
 
 // const tallerAda = {...person, height: 74};
+// // const tallerAda = { height: 74, ...person};
 // console.log(tallerAda);
+
 
 // 
 // // 2 Examples of the reduce method using the destructuring as well
@@ -188,18 +199,18 @@ console.log(peopleArray);
 // }, 0)
 // console.log(ratioAvg);
 
-// // Example 2 : But I can destructure in the argument list instead
-// const ratioAvg = peopleArray.reduce(function (oldRunningTotal, {height, weight}, idx, array) {
+// Example 2 : But I can destructure in the argument list instead
+const ratioAvg = peopleArray.reduce(function (oldRunningTotal, {height, weight}, idx, array) {
 
-//     // const {height, weight} = peopleObj;
+    // const {height, weight} = peopleObj;
 
-//     const ratio = height / weight;
+    const ratio = height / weight;
 
-//     const newAvgRatio= oldRunningTotal + ratio/array.length;
+    const newAvgRatio= oldRunningTotal + ratio/array.length;
 
-//     return newAvgRatio;
-// }, 0)
-// console.log(ratioAvg);
+    return newAvgRatio;
+}, 0)
+console.log(ratioAvg);
  
 
 // //Slide 15
