@@ -4,8 +4,8 @@ const animalArray = ["dog", "cat", "goldfish"];
 
 console.log("I'm the index.js file!");
 
-// //Slide 16a
-// console.log("animalArray: ", animalArray);
+//Slide 16a
+console.log("animalArray: ", animalArray);
 
 
 // // Slide 18
