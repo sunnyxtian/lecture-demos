@@ -3,10 +3,10 @@ const animalArray = ["dog", "cat", "goldfish"];
 console.log("I'm the other.js file!");
 
 
-// import {animalArray} from './index.js';
+import {animalArray} from './index.js';
 
-// //Slide 16a
-// console.log("Animal Array: ", animalArray)
+//Slide 16a
+console.log("Animal Array: ", animalArray)
 
 // // //Slide 18
 // const otherMessage = "I'm other!";
