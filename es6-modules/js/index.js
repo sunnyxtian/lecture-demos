@@ -4,7 +4,7 @@ const animalArray = ["dog", "cat", "goldfish"];
 
 console.log("I'm the index.js file!");
 
-//Slide 16a
+// //Slide 16a
 console.log("animalArray: ", animalArray);
 
 
@@ -40,7 +40,11 @@ console.log("animalArray: ", animalArray);
 // // console.log(theModule.otherMessage);
 // // theModule.otherFunc();
 
-// //Slide 20
-// console.log("Other says: ", otherMessage);
-// otherDefault();
+//Slide 20
+
+import otherDefaultMyVer from './other.js';
+import { otherMessage } from './other.js';
+
+console.log("Other says: ", otherMessage);
+otherDefaultMyVer();
 
