@@ -6,11 +6,13 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 import './index.css';
 
-//create an element using JSX
-const reactElem = <h1>Hello React!</h1>
+// //create an element using JSX
+// const message = "Hey there"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(reactElem);
+// const reactElem = <h1>{message}</h1>
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(reactElem);
 
 // //Slide 6 using an inline expression 
 // const titleMessage = "Hello World!!!";
@@ -24,8 +26,8 @@ root.render(reactElem);
 
 // const content = (
 //     <header>
-//         <h1 class="text-light px-5 py-4">Tim Carlson</h1>
-//         <div class="container">
+//         <h1 className="text-light px5 py-">Tim Carlson</h1>
+//         <div className="container">
 //             <p>University of Washington iSchool</p>
 //             <p>
 //                 <a href="http://getbootstrap.com/" className="btn btn-success">Built with Bootstrap</a>
@@ -36,6 +38,8 @@ root.render(reactElem);
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(content);
+
+
 
 // //Slide 10 - Lets do this as a react component
 // function HeaderBar(props) {
@@ -58,7 +62,7 @@ root.render(reactElem);
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(content);
 
-// Slide 13
+// // Slide 13
 
 // function HeaderBar(props) {
 //     //what does a header look like?
@@ -76,16 +80,17 @@ root.render(reactElem);
 // }
 
 
+
 // function JobCard(props) {
 //     //do some stuff
 
 //     //remember the image has to be closed and the 'class' needs to change to 'className'
 //     return (
-//         <div class="card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-//             <img src="img/SeattleTimes.jpg" alt="Seattle Times logo"/>
-//                 <h3>Seattle Times:  Paperboy</h3>
-//         </div>
-//         )
+//         <div className="card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+//         <img src="img/SeattleTimes.jpg" alt="Seattle Times logo"/>
+//         <h3>Seattle Times: Paperboy</h3>
+//     </div>
+// )
 // }
 
 // const content = (
@@ -133,7 +138,10 @@ root.render(reactElem);
 //             <JobCard />
 //             <JobCard />
 //             <JobCard />
-//         </div>
+//             <JobCard />
+//             <JobCard />
+            
+//          </div>
 //     )
 // }
 
@@ -148,9 +156,9 @@ root.render(reactElem);
 
 
 
-// //Slide 14A - Making modular components - Now we're moving stuff to individual js component files
+//Slide 14A - Making modular components - Now we're moving stuff to individual js component files
 
-// import App from './components/App'
+import App from './components/App'
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(<App/>);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App/>);

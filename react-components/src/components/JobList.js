@@ -25,9 +25,11 @@ import React from 'react';
 
 // function JobCard(props) {
 //     console.log(props);
-//     const image = props.image;
-//     const jobName = props.jobName;
-//     const altTag = props.altTag
+//     // const image = props.image;
+//     // const jobName = props.jobName;
+//     // const altTag = props.altTag
+
+//     const {image, jobName, altTag} = props;
 
 //     return (
 //         <div className="card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
@@ -124,6 +126,7 @@ import React from 'react';
 
 //     console.log(COURSE_DATA);
 //     return (
+        
 //         <div id="class-cards" className="row">
 //             {componentArray}
 //         </div>
@@ -131,49 +134,49 @@ import React from 'react';
 // }
 
 
-// // Slide 20A - Get rid of the key warning
-// import COURSE_DATA from './course-data.json';
+// Slide 20A - Get rid of the key warning
+import COURSE_DATA from './course-data.json';
 
-// function JobCard(props) {
+function JobCard(props) {
 
-//     const image = props.image;
-//     const jobName = props.jobName;
-//     const altTag = props.altTag
+    const image = props.image;
+    const jobName = props.jobName;
+    const altTag = props.altTag
 
-//     let classList = "card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"
+    let classList = "card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"
 
-//     //highlight a particular value
-//     if (props.currentJob) {
-//         classList += " bg-warning bg-gradient"
-//     }
+    //highlight a particular value
+    if (props.currentJob) {
+        classList += " bg-warning bg-gradient"
+    }
 
-//     return (
-//         <div className={classList}>
-//             <img src={image} alt={altTag} />
-//             <h3>{jobName}</h3>
-//         </div>
-//     )
-// }
+    return (
+        <div className={classList}>
+            <img src={image} alt={altTag} />
+            <h3>{jobName}</h3>
+        </div>
+    )
+}
 
-// export function JobCardList(props) {
+export function JobCardList(props) {
 
-//     //I want an array of elements, but need to add a key with a unique value
-//     const componentArray = COURSE_DATA.map((jobObj) => {
+    //I want an array of elements, but need to add a key with a unique value
+    const componentArray = COURSE_DATA.map((jobObj) => {
 
-//         const element = (
-//             <JobCard
-//                 image={jobObj.image}
-//                 altTag={jobObj.altTag}
-//                 jobName={jobObj.jobName}
-//                 key={jobObj.jobName} />
-//         )
-//         return element; //don't forget to return!
-//     })
+        const element = (
+            <JobCard
+                image={jobObj.image}
+                altTag={jobObj.altTag}
+                jobName={jobObj.jobName}
+                key={jobObj.jobName} />
+        )
+        return element; //don't forget to return!
+    })
 
-//     console.log(COURSE_DATA);
-//     return (
-//         <div id="class-cards" className="row">
-//             {componentArray}
-//         </div>
-//     )
-// }
+    console.log(COURSE_DATA);
+    return (
+        <div id="class-cards" className="row">
+            {componentArray}
+        </div>
+    )
+}
