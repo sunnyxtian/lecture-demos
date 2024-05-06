@@ -1,7 +1,7 @@
 import React from 'react';
-import { HeaderBar } from './HeaderBar';
-import { ChannelList } from './ChannelList'
-import { ChatPane } from './ChatPane';
+// import { HeaderBar } from './HeaderBar';
+// import { ChannelList } from './ChannelList'
+// import { ChatPane } from './ChatPane';
 
 
 export default function App(props) {
@@ -9,6 +9,15 @@ export default function App(props) {
     <div>Hello App</div>
   );
 }
+
+// // Example Slide 11
+// export default function App(props) {
+//   return (
+//     <div>
+//       <HeaderBar />
+//     </div>
+//   );
+// }
 
 
 // // Example Slide 13
