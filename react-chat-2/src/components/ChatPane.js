@@ -173,13 +173,16 @@ function MessageItem(props) {
 // import CHAT_HISTORY from '../data/chat_log.json';
 
 // export function ChatPane(props) {
+  
 //   // const stateManagementArray = useState(0); //start out at 0 very first time
 //   // const count = stateManagementArray[0];
 //   // const setCount = stateManagementArray[1];
 //   // console.log("stateManagementArray: ", stateManagementArray)
 
-//   //instead destructure
+//   // //instead destructure
 //   const [count, setCount] = useState(0);
+
+
 //   const currentChannel = props.currentChannel;
 
 
@@ -220,6 +223,7 @@ function MessageItem(props) {
 //           </div>}
 //         {/* messages */}
 //         {messageItemArray}
+//         <TodoListWithError/>
 //       </div>
 //     </div>
 //   )
@@ -253,6 +257,44 @@ function MessageItem(props) {
 //     </div>
 //   )
 // }
+
+// function TodoListWithError(props) {
+//   //a state value that is an array of objects
+//   const [todos, setTodos] = useState([{ text: 'Learn Hooks' }]);
+
+//   const handleClick = (event) => {
+//     console.log("you clicked me");
+//     todos[0].text = "Fix bugs"; //modify the object 
+//                                 //but don't make a new one
+//     setTodos(todos) //This won't work! Not "changing"
+//   }
+//    console.log(todos);
+  
+//   return (
+//     // {todos[0].text}
+//     <p onClick={handleClick}>{todos[0].text}</p>
+//   )
+// }
+
+// // function TodoListWithError(props) {
+// //   //a state value that is an array of objects
+// //   const [todos, setTodos] = useState([{ text: 'Learn Hooks' }]);
+
+// //   const handleClick = (event) => {
+// //         todos[0].text = "Fix bugs"; //modify the object 
+// //                                 //but don't make a new one
+
+// //     const newTodosArray = [...todos];
+// //     // setTodos(todos) //This won't work! Not "changing"
+// //     setTodos(newTodosArray) //setting a copy will work
+// //   }
+// //    console.log(todos);
+  
+// //   return (
+// //     // {todos[0].text}
+// //     <p onClick={handleClick}>{todos[0].text}</p>
+// //   )
+// // }
 
 // //Slide 35 (36 and 37) to elevate state to App
 // import React, {useState} from 'react';
