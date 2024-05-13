@@ -5,7 +5,8 @@
       "userImg": "/img/Penguin.png",
       "text": "It's so cold out today!",
       "timestamp": 1320161040000,
-      "channel": "general"
+      "channel": "general",
+      "liked": true
   },
   {
       "uid": "parrot",
@@ -21,7 +22,8 @@
       "userImg": "/img/Eagle.png",
       "text": "Lucky duck",
       "timestamp": 1320162060000,
-      "channel": "general"
+      "channel": "general",
+      "liked": true
   },
   {
       "userId": "parrot",

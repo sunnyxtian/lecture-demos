@@ -196,6 +196,7 @@ export function HeaderBar(props) {
 //     <header className="text-light bg-primary px-1 d-flex justify-content-between">
 //       <h1>React Messenger</h1>
 
+
 //       <Dropdown>
 //         <Dropdown.Toggle variant="primary">
 //           <img src={currentUser.userImg} alt={currentUser.userName + " avatar"} />
