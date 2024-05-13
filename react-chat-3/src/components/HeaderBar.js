@@ -126,11 +126,11 @@ export function HeaderBar(props) {
 //     }
 
 //     return (
-//       <Dropdown.Item className={classList} key={userObj.userName}
+//       <button className={classList} key={userObj.userName}
 //         name={userObj.userId} onClick={handleClick}
 //       >
 //         <img src={userObj.userImg} alt={userObj.userName + " avatar"} />
-//       </Dropdown.Item>
+//       </button>
 //     )
 //   })
 
@@ -138,26 +138,13 @@ export function HeaderBar(props) {
 //   return (
 //     <header className="text-light bg-primary px-1 d-flex justify-content-between">
 //       <h1>React Messenger</h1>
-//       {/* <button className='btn btn-primary'>Click me</button> */}
-//       {/* <Button variant="primary">Click me</Button>{' '} */}
-
-
 //       <div>
-//       <Dropdown>
-//       <Dropdown.Toggle variant="success" id="dropdown-basic">
-//         Dropdown Button
-//       </Dropdown.Toggle>
-
-//       <Dropdown.Menu>
-//       {userButtons}     
-//        </Dropdown.Menu>
-//     </Dropdown>
-
-//         {/* {userButtons} */}
+//         {userButtons}
 //       </div>
 //     </header>
 //   )
 // }
+
 
 // //Slide 29, User the callback to swap users
 // import React from 'react';
